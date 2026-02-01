@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  margin: auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.login h2 {
+  margin-bottom: 15px;
+}
+
+.login input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  background: #0f172a;
+  color: white;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login button:hover {
+  background: #0ea5e9;
+}
+
+/* CHAT */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+#messages li {
+  background: #1e293b;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#messages b {
+  color: #38bdf8;
+}
+
+#messages a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+#messages a:hover {
+  text-decoration: underline;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+form input[type="file"] {
+  color: white;
+}
+
+form button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #0ea5e9;
+}
